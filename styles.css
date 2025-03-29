@@ -1,5 +1,58 @@
 body {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border: solid 1px black;
+    margin: 250px 0;
+    color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
     text-align: center;
+    background: radial-gradient(circle, #ff4d4d, #ff66b2, #ff9933);
+    transition: background 1s ease-in-out;
+}
+
+/* From Uiverse.io by KINGFRESS */ 
+button {
+  margin: 0 auto;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 120px;
+  height: 50px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15); /* Fondo semi-transparente */
+  backdrop-filter: blur(10px); /* Glass Effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
+}
+
+button .span-mother, 
+button .span-mother2 {
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+
+button:hover .span-mother {
+  position: absolute;
+}
+
+button .span-mother span {
+  transition: transform 0.5s ease;
+}
+
+button:hover .span-mother span {
+  transform: translateY(1.2em);
+}
+
+button .span-mother2 span {
+  transform: translateY(-1.2em);
+  transition: transform 0.5s ease;
+}
+
+button:hover .span-mother2 span {
+  transform: translateY(0);
 }
